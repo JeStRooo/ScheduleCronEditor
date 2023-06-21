@@ -1,0 +1,72 @@
+* {
+  font: normal 18px/21px Poppins, sans-serif;
+}
+
+.main {
+  padding: 1rem 0;
+}
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.schedule {
+  width: 100%;
+  height: 270px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0 7px 30px 7px;
+
+  &__title {
+    font: normal 25px/28px Poppins, sans-serif;
+  }
+
+  &__edit {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}
+.scheduleActions {
+  display: flex;
+  gap: 2rem;
+
+  &__load {
+    background-color: #4448DA;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: .3s all;
+
+
+    &:disabled {
+      background-color: rgba(68, 72, 218, 0.5);
+    }
+  }
+
+  &__save {
+    @extend .scheduleActions__load;
+  }
+}
+.scheduleSaveText {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  outline: 1.5px solid #8d8a8a;
+  font: normal 17px/19px Poppins, sans-serif;
+
+  &:focus {
+    outline: 1.5px solid #107EFFFF;
+  }
+}

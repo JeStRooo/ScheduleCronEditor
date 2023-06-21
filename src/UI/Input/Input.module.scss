@@ -1,0 +1,18 @@
+.myInput {
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  outline: 1.5px solid #8d8a8a;
+  font: normal 17px/19px Poppins, sans-serif;
+
+  &:focus {
+    outline: 1.5px solid #107EFFFF;
+  }
+}
+
+.myInputError {
+  @extend .myInput;
+  outline: 1.5px solid red;
+}
